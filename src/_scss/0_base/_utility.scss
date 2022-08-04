@@ -1,0 +1,366 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before {
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+.u-list1 {
+    margin-left: 1.5%;
+
+    @include bp(1254) {
+        padding-left: 10px;
+        margin-left: 0;
+    }
+
+    @include sp {
+        margin: 0 auto;
+    }
+}
+
+.u-list2 {
+    @include sp {
+        text-align: right;
+        margin-top: 6px;
+        margin-right: 7px;
+    }
+}
+
+.u-list3 {
+    margin-right: -1.5%;
+
+    @include bp(1254) {
+        margin-right: 0;
+        padding-right: 10px;
+    }
+
+    @include sp {
+        margin: 9px 0 0;
+    }
+}
+
+
+.u-com2 {
+    @include sp {
+        margin-left: auto;
+    }
+}
+
+.u-titlemo {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: calc(33.6pt / 28pt);
+    letter-spacing: 0.01em;
+
+    @include sp {
+        font-size: 1.4rem;
+        letter-spacing: -0.03em;
+        margin-left: 2px;
+    }
+}
+
+.u-txt01 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+
+    @include sp {
+        font-size: 1.1rem;
+        line-height: calc(26.4pt / 22pt);
+        margin-bottom: 9px;
+    }
+}
+
+.u-txt02 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    line-height: calc(27pt / 19pt);
+
+    @include sp {
+        font-size: 0.95rem;
+        line-height: calc(26pt / 19pt);
+        letter-spacing: 0;
+    }
+}
+
+.u-titleplan {
+    padding-bottom: 13px;
+    margin: 0 0 78px 11px;
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: $oswald-font;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    position: relative;
+    color: #000;
+
+    @include sp {
+        font-size: 2.4rem;
+        margin: 0 0 21px;
+        padding-bottom: 7px;
+    }
+}
+
+.u-titleplan::before {
+    content: "";
+    background: #c8c5c4;
+    width: 57px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include sp {
+        width: 30px;
+    }
+}
+
+.u-finance {
+    font-size: 4.8rem;
+    margin-bottom: 46px;
+    font-family: $oswald-font;
+    letter-spacing: 0.06em;
+    font-weight: 300;
+    position: relative;
+    color: #000;
+    text-align: center;
+    padding-bottom: 28px;
+    margin: 0 0 45px 30px;
+    letter-spacing: 5px;
+
+    @include sp {
+        font-size: 2.4rem;
+        margin: 0 0 7.5px;
+        letter-spacing: 2.5px;
+    }
+
+}
+
+.u-finance::before {
+    content: "";
+    background: #c8c5c4;
+    width: 57px;
+    height: 1px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include sp {
+        width: 28.5px;
+        bottom: 20px;
+    }
+}
+
+.u-content1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    padding-left: 10px;
+    margin: -9px 0 7px;
+
+    @include sp {
+        font-size: 1.3rem;
+        padding-left: 3px;
+        margin: -16px 0 2px;
+    }
+}
+
+.u-content2 {
+    font-size: 9rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-left: 4px;
+    margin-bottom: 17px;
+    color: #7a89a8;
+    @include sp {
+        font-size: 4.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+.u-content3 {
+    font-size: 3.6rem;
+    margin-left: 10px;
+
+    @include sp {
+        font-size: 1.8rem;
+    }
+}
+
+
+.slick-prev {
+    position: absolute;
+    left: calc(100% - 127px);
+    bottom: -80px;
+    background: url("assets/img/1x/SVG/slick-left.svg");
+    width: 54px;
+    height: 53px;
+
+    @include sp {
+        width: 32px;
+        height: 32px;
+        left: calc(100% - 77px);
+        bottom: -35px;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    left: calc(100% - 54px);
+    bottom: -80px;
+    background: url("assets/img/1x/SVG/slick-right.svg");
+    width: 54px;
+    height: 53px;
+
+    @include sp {
+        width: 32px;
+        height: 32px;
+        left: calc(100% - 34px);
+        bottom: -35px;
+    }
+}
+
+.u-planimg1 {
+    img {
+        margin-left: 32px;
+
+        @include sp {
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.u-planimg2 {
+    img {
+        margin: 16px 0 0 28px;
+
+        @include sp {
+            margin: 0;
+        }
+    }
+
+}
+
+#u-dt3 {
+    @include sp {
+        margin-top: 3px;
+    }
+}
+
+#u-dt4 {
+    @include sp {
+        margin: -6px 0 8px;
+    }
+}
+
+#u-dd3 {
+    padding-left: 0;
+
+    @include sp {
+        margin: -5px 0 5px -10px;
+
+        p:nth-child(4) {
+            margin: 0 0 5px 5px;
+        }
+    }
+}
+
+#u-dd4 {
+    padding-left: 0;
+
+    @include sp {
+        margin: -5px 0 5px -10px;
+
+    }
+}
+
+#u-a4 {
+    @include sp {
+        padding: 4px;
+    }
+}
+
+.u-contentright {
+    @include bp(1254) {
+        text-align: left;
+    }
+}
+
+.u-web {
+    font-size: 3.4rem;
+    font-family: $foreign-fonts;
+    font-weight: 400;
+    text-align: center;
+    margin: -10px 0 10px;
+
+    @include sp {
+        font-size: 1.7rem;
+        margin-top: -29px;
+    }
+
+}
+
+.u-websub {
+    font-size: 4.6rem;
+    font-family: $font-4;
+    color: #252a6d;
+
+    @include sp {
+        font-size: 2.3rem;
+    }
+}
+
+.u-webtxt {
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 72px;
+    line-height: 1.4;
+
+    @include sp {
+        font-size: 1.35rem;
+        margin-bottom: 33px;
+    }
+}
+
+.u-btnweb {
+    font-size: 2.3rem;
+    font-weight: 600;
+    max-width: 240px;
+    width: 100%;
+    background: #fff;
+    border-radius: 100px;
+    padding: 3px 0;
+    color: #231815;
+    display: inline-block;
+    text-align: center;
+    margin-right: 31px;
+    position: relative;
+    top: -7px;
+
+    @include sp {
+        font-size: 1.15rem;
+        max-width: 120px;
+        padding: 8px 0;
+        margin-right: 0;
+        top: 8px;
+    }
+}
+
+.u-btnweb:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.u-txtweb {
+    font-size: 1.6rem;
+}
+
+//------------------------------------------------------------
+// color
+//------------------------------------------------------------

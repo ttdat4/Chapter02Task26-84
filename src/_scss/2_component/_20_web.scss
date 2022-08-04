@@ -1,0 +1,259 @@
+/*--------------------------------------------------------------
+Web
+----------------------------------------------------------------*/
+
+.c-web {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    padding: 0 0 0 1.73%;
+
+    @include tab {
+        flex-wrap: wrap;
+        padding: 0 0 0 4.73%;
+        margin-bottom: 38px;
+    }
+
+    &__01 {
+        position: relative;
+        width: calc((100% - 256px) / 5);
+        background: #565f64;
+        color: #fff;
+        text-align: center;
+        padding: 50px 22px 46px;
+        font-family: $foreign-fonts;
+
+        @include tab {
+            width: 46%;
+            margin-right: 2%;
+            margin-bottom: 6%;
+            padding: 14px 2px 11px;
+        }
+
+        @include sp {
+            width: 41%;
+            margin-right: 9%;
+            margin-bottom: 7%;
+            padding: 14px 2px 19px;
+        }
+
+        &--img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 7px 0 0 -4px;
+        }
+
+        &--img01 {
+            width: 40px;
+            height: 27px;
+            margin-bottom: 30px;
+
+
+            @include sp {
+                width: 22px;
+                margin-bottom: 13px;
+            }
+        }
+
+        &--txt01 {
+            font-size: 2.1rem;
+            border-bottom: 1px rgba(255, 255, 255, 0.25) solid;
+            margin: -8px 0 10px;
+            padding-bottom: 5px;
+
+            @include sp {
+                font-size: 1.05rem;
+                margin: -8px 0 2px;
+                padding-bottom: 2px;
+            }
+        }
+
+        &--txt02 {
+            font-size: 1.6rem;
+
+            @include sp {
+                font-size: 0.8em;
+                letter-spacing: -0.2em;
+            }
+        }
+    }
+
+    &__01:nth-child(1) {
+        background: #231815;
+    }
+
+    &__01:nth-child(5) {
+        background: #7a89a8;
+        margin-right: 0;
+    }
+
+    &__01:not(:last-child)::before {
+        content: "";
+        background: url("./assets/img/1x/SVG/arrow_web.svg") top right no-repeat;
+        width: 8px;
+        height: 16px;
+        position: absolute;
+        top: 51.5%;
+        right: -36px;
+        transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        @include tab {
+            right: -30px;
+        }
+
+        @include sp {
+            width: 4px;
+            height: 8px;
+            right: -11.2%;
+
+        }
+    }
+}
+
+
+.c-web2 {
+    padding: 0 2%;
+
+    @include sp {
+        padding: 0 4.5%;
+    }
+}
+
+.c-webbox2 {
+    background: #231815;
+    color: #fff;
+    font-size: 2rem;
+    padding: 60px 86px 43px;
+    font-weight: 300;
+
+    @include sp {
+        text-align: center;
+        padding: 8px 47px 9px;
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        margin-bottom: 8px;
+        letter-spacing: 0.9px;
+
+        @include sp {
+            line-height: 1;
+        }
+    }
+
+    &__title01 {
+        padding-left: 10px;
+
+        @include sp {
+            font-size: 1rem;
+        }
+    }
+
+    &__01 {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 37px;
+
+            @include sp {
+                max-width: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                padding: 32px 37px;
+            }
+        }
+
+        li {
+            display: flex;
+            flex-flow: column nowrap;
+            width: calc((100% - 1px) / 5);
+            text-align: center;
+            padding: 14px 10px 31px;
+            border-bottom: 1px rgba(174, 174, 174, 0.25) solid;
+            border-right: 1px rgba(174, 174, 174, 0.25) solid;
+
+            @include sp {
+                width: 100%;
+                padding: 14px 10px 16px;
+            }
+        }
+
+
+        li:nth-child(6),
+        li:nth-child(7),
+        li:nth-child(8),
+        li:nth-child(9),
+        li:nth-child(10) {
+            border-bottom: 0;
+
+            @include sp {
+                border-bottom: 1px rgba(174, 174, 174, 0.25) solid;
+            }
+        } 
+
+        li:nth-child(5),
+        li:nth-child(10) {
+            border-right: 0;
+
+            @include sp {
+                border-right: 1px rgba(174, 174, 174, 0.25) solid;
+            }
+        } 
+
+        li:nth-child(even) {
+            @include sp {
+                border-right: 0;
+            }
+            
+        }
+
+        li:nth-child(9),
+        li:nth-child(10) {
+            
+
+            @include sp {
+                border-bottom: 0;
+            }
+        } 
+
+
+
+        &--img {
+            min-height: 110px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include sp {
+                min-height: 70px;
+                margin-bottom: 3px;
+            }
+
+            img {
+                width: 105px;
+
+                @include sp {
+                    width: 64px;
+                }
+            }
+        }
+
+        &--txt {
+            font-size: 1.5rem;
+            margin-top: auto;
+            line-height: 1.55;
+
+            @include sp {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+----------------------------------------------------------------*/

@@ -1,0 +1,173 @@
+/*----------------------------------------------------------------
+Finance
+-----------------------------------------------------------------*/
+
+
+.c-finance {
+    max-width: 1272px;
+    width: 90%;
+    margin: 0 auto;
+
+    &__title {
+        &--loan {
+            font-family: $foreign-fonts;
+            font-size: 3.05rem;
+            font-weight: 600;
+            background: #231815;
+            padding: 1px 0 2px;
+            max-width: 409px;
+            width: 100%;
+            display: block;
+            margin: 0 auto 46px;
+            text-align: center;
+            color: #fff;
+            margin-left: calc(50% + 17px);
+            transform: translateX(-50%);
+
+            @include sp {
+                font-size: 1.525rem;
+                max-width: 204.5px;
+                width: 100%;
+                margin: 0 auto 23px;
+                transform: none;
+
+            }
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        font-family: $foreign-fonts;
+        font-size: 2.1rem;
+        line-height: 3.2;
+
+        @include tab {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        @include sp {
+            font-size: 1.05rem;
+        }
+
+        &--content {
+            width: calc((100% - 64px) / 2);
+            background: #fff;
+            padding: 92px 97px 72px 84px;
+            position: relative;
+            letter-spacing: 0.8px;
+
+            @include bp(1254) {
+                width: calc((100% - 45px) / 2);
+                padding: 92px 10px 72px;
+                text-align: center;
+            }
+
+            @include tab {
+                max-width: 438px;
+                width: 100%;
+                margin-left: 30px;
+            }
+
+            @include sp {
+                max-width: 302px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 45px 30px 36px 43px;
+                letter-spacing: 0.3px;
+            }
+        }
+
+        &--content+&--content {
+            @include tab {
+                margin-top: 40px;
+
+            }
+            @include sp {
+                margin-top: 28px;
+                padding: 57px 30px 40px 43px;
+            }
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        top: -19px;
+        right: -45px;
+        background: #7a89a8;
+        color: #fff;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        padding-top: 35px;
+
+        @include sp {
+            width: 100px;
+            height: 100px;
+            right: -22px;
+            top: -9px;
+            padding-top: 19px;
+        }
+
+        &--text {
+            font-size: 3.2rem;
+            line-height: 1;
+            margin-bottom: 20px;
+
+            @include sp {
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        &--number {
+            font-size: 9.6rem;
+            line-height: 0.6;
+
+            @include sp {
+                font-size: 4.8rem;
+            }
+        }
+
+        &--numtxt {
+            font-size: 3.2rem;
+            margin-left: 7px;
+            position: relative;
+            top: -10px;
+
+            @include sp {
+                font-size: 1.6rem;
+                margin-left: 4px;
+                top: -5px;
+            }
+        }
+    }
+
+    &__circle::before {
+        content: "";
+        background: url("assets/img/1x/SVG/finance-com.svg") top right no-repeat;
+        width: 39px;
+        height: 45px;
+        position: absolute;
+        top: 135px;
+        left: -7px;
+
+        @include sp {
+            width: 35px;
+            height: 42px;
+            top: 49px;
+            left: -4px;
+        }
+    }
+}
+
+
+/*----------------------------------------------------------------
+-----------------------------------------------------------------*/
